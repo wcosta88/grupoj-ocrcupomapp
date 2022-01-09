@@ -41,3 +41,35 @@
     color: #ed145b !important;
     opacity: 1;
 }
+
+.List {
+    list-style: none;
+}
+
+.Back-Button {
+    position: fixed;
+    left: 2%;
+    top: 4%;
+    transform: translate(-50%, -50%);
+    max-width: 320px;
+    border: none;
+    color: #FFF;
+    transition: all .4s;
+}
+
+
+.Back-Button:hover {
+    color: #ed145b !important;
+    opacity: 1;
+}
+
+.Box-Cards {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    right: 5%;
+}

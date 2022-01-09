@@ -22,7 +22,8 @@ const httpGet = async (url) => {
 
     let jsonResponse = await response.json();
     let responseBody = await jsonResponse;
-    console.log(responseBody);
+    
+    return responseBody;
 }
 
 

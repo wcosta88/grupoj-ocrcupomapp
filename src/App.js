@@ -1,25 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-import Box from './components/box/Box';
-import Form from './components/form/Form';
-import Button from './components/button/Button'
-import {useState} from 'react';
+import { Routes, Route } from 'react-router-dom';
+import{HomePage, SendReceiptPage, ListInvalidReceipt, ListValidReceipt} from './pages/pages'
 
 
 function App() {
-  const [form, setForm] = useState();
-
-  const buildForm = () => {
-    setForm(<Form></Form>);
-    
-  }
-
   return (
     <div>
-      <Box>  
-        <Button label_name='Enviar Cupom' class='Button' callback={buildForm}></Button>
-        <Button label_name='Listar Cupons' class='Button'></Button>
-      </Box>
+      <Routes> 
+        <Route path='/' element={<HomePage />}/>
+        <Route path='/sendReceipt' element={<SendReceiptPage />}/>
+        <Route path='/listValidReceipt' element={<ListValidReceipt />}/>
+        <Route path='/listInvalidReceipt' element={<ListInvalidReceipt />}/>
+      </Routes>
     </div>
   );
 }

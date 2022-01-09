@@ -4,7 +4,7 @@ const FormInput = (props) => {
     return (
         <input
             className='Input'
-            accept=".bmp, .jpg, .png, .pbm  "
+            accept=".jpg"
             type={props.type}
             id={props.id}>       
         </input> 

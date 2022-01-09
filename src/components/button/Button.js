@@ -13,7 +13,7 @@ const Button = (props) => {
 
     return (
         <button
-            className={props.class}
+            className='Button-Form'
             onClick={props.callback}
             >{props.label_name}</button>
     )

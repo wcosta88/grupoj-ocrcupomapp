@@ -3,12 +3,7 @@ import { createWorker } from 'tesseract.js';
 import { findCnpj, extractCnpj } from './tesseract_helpers';
 import { encodeImgToBase64 } from '../utils/helper_functions';
 import { loggerFunction } from '../utils/logger_functions';
-import { httpPost, httpGet } from '../httpClient/httpClientBe';
-
-import image from '../eng_bw.png';
-import image2 from '../cupom_test.jpeg';
-import image3 from '../cupom2_test.jpeg';
-
+import { httpPost } from '../httpClient/httpClientBe';
 
 const recognizeImage = async (file) => {
   const ts_worker = createWorker({
@@ -40,8 +35,6 @@ const recognizeImage = async (file) => {
                        'cnpj': cnpj};
     
     await httpPost('http://localhost:4566/restapis/sdj660yyyi/test/_user_request_/processamento-ocr-cupom', requestHeaders, requestBody);
-    await httpGet('http://localhost:4566/restapis/sdj660yyyi/test/_user_request_/cupons-validos');
-    await httpGet('http://localhost:4566/restapis/sdj660yyyi/test/_user_request_/cupons-invalidos');
   }
   else
     console.log('CNPJ nao encontrado no cupom fiscal');
