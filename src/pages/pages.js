@@ -1,3 +1,4 @@
+import { api_key } from '../utils/globals';
 import { useState, useEffect } from 'react';
 import Box from '../components/box/Box';
 import {Link} from 'react-router-dom';
@@ -34,7 +35,7 @@ export const ListValidReceipt = () => {
     const [receipts, setReceitps] = useState('Buscando Cumpons');
 
     useEffect(async () => {
-        let response = await httpGet('http://localhost:4566/restapis/sdj660yyyi/test/_user_request_/cupons-validos')
+        let response = await httpGet(`http://localhost:4566/restapis/${api_key}/test/_user_request_/cupons-validos`)
 
         setReceitps(response.data);
     }, []);
@@ -62,7 +63,7 @@ export const ListInvalidReceipt = () => {
     const [receipts, setReceitps] = useState('Buscando Cumpons');
 
     useEffect(async () => {
-        let response = await httpGet('http://localhost:4566/restapis/sdj660yyyi/test/_user_request_/cupons-invalidos')
+        let response = await httpGet(`http://localhost:4566/restapis/${api_key}/test/_user_request_/cupons-invalidos`)
 
         setReceitps(response.data);
     }, []);

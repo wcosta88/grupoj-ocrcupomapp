@@ -1,3 +1,4 @@
+import { api_key } from '../utils/globals';
 import Tesseract from 'tesseract.js';
 import { createWorker } from 'tesseract.js';
 import { findCnpj, extractCnpj } from './tesseract_helpers';
@@ -34,7 +35,7 @@ const recognizeImage = async (file) => {
     let requestBody = {'cupom': encodedFile,
                        'cnpj': cnpj};
     
-    await httpPost('http://localhost:4566/restapis/sdj660yyyi/test/_user_request_/processamento-ocr-cupom', requestHeaders, requestBody);
+    await httpPost(`http://localhost:4566/restapis/${api_key}/test/_user_request_/processamento-ocr-cupom`, requestHeaders, requestBody);
   }
   else
     console.log('CNPJ nao encontrado no cupom fiscal');
