@@ -1,0 +1,12 @@
+.Input {
+    border: none;
+    color: #FFF;
+    display: block;
+    font: 15px/45px 'Gotham HTF Book';
+    height: 50px;
+    letter-spacing: 2px;
+    outline: none;
+    padding: 0 15px;
+    text-align: center;
+    width: 100% !important;
+}

@@ -1,0 +1,8 @@
+.Label {
+    color: #DDD;
+    display: block;
+    font: 12px/50px 'Gotham HTF Light';
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}

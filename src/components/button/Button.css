@@ -1,0 +1,42 @@
+.Button-Form {
+    background: #ed145b !important;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    font: 14px 'Gotham HTF Bold';
+    height: 50px;
+    letter-spacing: 1px;
+    outline: none;
+    text-transform: uppercase;
+    transition: all .4s;
+    width: 100%;
+    -webkit-appearance: none;
+}
+
+.Button-Form:hover {
+    background: #fff !important;
+    color: #ed145b !important;
+    opacity: 1;
+}
+
+.Button {
+    background: #ed145b !important;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    font: 14px 'Gotham HTF Bold';
+    height: 50px;
+    letter-spacing: 1px;
+    outline: none;
+    text-transform: uppercase;
+    transition: all .4s;
+    /*width: 100%;*/
+    -webkit-appearance: none;
+}
+
+.Button:hover {
+    background: #fff !important;
+    color: #ed145b !important;
+    opacity: 1;
+}
