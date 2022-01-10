@@ -2,7 +2,7 @@
 
 Aplicação responsável por realizar o upload do cupom, fazer uma pré validação e enviar para o processamento
 
-## Arquitetura
+## Localização na arquitetura
 
 ![](Arquitetura OCR Cupom app.drawio.png)
 
