@@ -8,6 +8,7 @@ import './pages.css';
 import { FaArrowAltCircleLeft } from 'react-icons/fa';
 import{ httpGet } from '../httpClient/httpClientBe';
 import ReceiptList from '../components/listValidReceipt/listReceipt'
+import { LoggerInUI } from '../utils/logger_functions';
 
 export const HomePage = () => {
     return <Box>  
@@ -25,7 +26,10 @@ export const SendReceiptPage = () => {
     return <div>
             <Box >
                 <Form></Form>
+                <div id='processing' className='Box-Processando'><p id='processing-text'></p></div>
             </Box>
+            
+            
             <Link to='/' className='Back-Button'><FaArrowAltCircleLeft size={50} /></Link>
     </div>
 

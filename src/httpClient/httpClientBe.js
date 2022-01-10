@@ -1,3 +1,4 @@
+import { LoggerInUI } from '../utils/logger_functions';
 
     //@param url: string
     //@param options: object
@@ -11,6 +12,13 @@ const httpPost = async (url, headers, bodyData, bodyType = 'json') =>  {
 
         let jsonResponse = await response.json();
         let responseBody = await jsonResponse;
+        
+        if(response.status === 201) {
+            LoggerInUI('Cupom Processado com Sucesso');
+        } else {
+            LoggerInUI('Cupom Inválido');
+        }
+        
         console.log(response.status);
         console.log(responseBody);
     }

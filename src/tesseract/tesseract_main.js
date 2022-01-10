@@ -3,13 +3,13 @@ import Tesseract from 'tesseract.js';
 import { createWorker } from 'tesseract.js';
 import { findCnpj, extractCnpj } from './tesseract_helpers';
 import { encodeImgToBase64 } from '../utils/helper_functions';
-import { loggerFunction } from '../utils/logger_functions';
+import { LoggerInUI } from '../utils/logger_functions';
 import { httpPost } from '../httpClient/httpClientBe';
 
 const recognizeImage = async (file) => {
   const ts_worker = createWorker({
-    logger: logMessage => loggerFunction(logMessage),
-    errorHandler: errorMessage => console.log(errorMessage)
+    logger: logMessage => LoggerInUI(logMessage),
+    errorHandler: errorMessage => LoggerInUI(errorMessage)
   });
   console.log('Worker created');
 
