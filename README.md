@@ -1,14 +1,14 @@
 # Instrucoes para Iniciar o FrontEnd
 
-### O Servico do Backend precisa estar rodando antes de executar as instrucoes abaixo.
+### O Serviço do Backend precisa estar rodando antes de executar as instruções abaixo.
 
-### Instalacao do **Node.js** é um requisito
+### Instalação do **Node.js** é um requisito
 
-1. Acessar a pagina de logs do container **localstack** e copiar o api_key.
+1. Acessar a página de logs do container **localstack** e copiar o api_key.
 ![](api_key.jpg)
 
 
-2. Acessar o arquivo **globals.js** (src/utils/globals.js) e setar a variavel **api_key**.
+2. Acessar o arquivo **globals.js** (src/utils/globals.js) e setar a variável **api_key**.
 ![](api_key_var.jpg)
 
 3. Executar o comando **npm start**.
