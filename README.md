@@ -1,6 +1,6 @@
 # Instrucoes para Iniciar o FrontEnd
 
-### O Servico do Backend precisa estart rodando antes de executar as instrucoes abaixo.
+### O Servico do Backend precisa estar rodando antes de executar as instrucoes abaixo.
 
 ### Instalacao do **Node.js** é um requisito
 
