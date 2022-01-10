@@ -1,4 +1,4 @@
-# Instrucoes para Iniciar o FrontEnd
+# Instruções para Iniciar o FrontEnd
 
 ### O Serviço do Backend precisa estar rodando antes de executar as instruções abaixo.
 
