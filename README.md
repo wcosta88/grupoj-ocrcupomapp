@@ -25,3 +25,4 @@ Aplicação responsável por realizar o upload do cupom, fazer uma pré validaç
 5. Acessar a URL [http://localhost:3000](http://localhost:3000) no seu navegador.
 =======
 
+![](Arquitetura app.png)
