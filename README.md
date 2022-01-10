@@ -1,3 +1,11 @@
+# OCR CUPOM APP
+
+Aplicação responsável por realizar o upload do cupom, fazer uma pré validação e enviar para o processamento
+
+## Arquitetura
+
+![](Arquitetura OCR Cupom app.drawio.png)
+
 # Instruções para Iniciar o FrontEnd
 
 ### O Serviço do Backend precisa estar rodando antes de executar as instruções abaixo.
