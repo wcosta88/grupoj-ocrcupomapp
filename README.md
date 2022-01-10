@@ -4,7 +4,7 @@ Aplicação responsável por realizar o upload do cupom, fazer uma pré validaç
 
 ## Localização na arquitetura
 
-![](Arquitetura app.png)
+![](public/Arquitetura app.png)
 
 # Instruções para Iniciar o FrontEnd
 
@@ -24,5 +24,3 @@ Aplicação responsável por realizar o upload do cupom, fazer uma pré validaç
 
 5. Acessar a URL [http://localhost:3000](http://localhost:3000) no seu navegador.
 =======
-
-![](Arquitetura app.png)
