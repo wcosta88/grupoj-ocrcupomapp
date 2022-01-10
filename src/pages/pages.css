@@ -25,13 +25,12 @@
     border: none;
     color: #FFF;
     cursor: pointer;
-    font: 14px 'Gotham HTF Bold';
     height: 50px;
     letter-spacing: 1px;
     outline: none;
     text-transform: uppercase;
     transition: all .4s;
-    /*width: 100%;*/
+    width: 100%;
     -webkit-appearance: none;
     text-decoration: none;
 }
@@ -72,4 +71,16 @@
     top: 10%;
     left: 10%;
     right: 5%;
+}
+
+.Card-Header-Local {
+    background-color: #ed145b;
+}
+
+.Box-Processando {
+    color: #DDD;
+    margin-top: 30px;
+    margin-left: 70px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
