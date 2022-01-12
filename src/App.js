@@ -5,7 +5,7 @@ import{HomePage, SendReceiptPage, ListInvalidReceipt, ListValidReceipt} from './
 
 function App() {
   return (
-    <div>
+    <div className='General-Box'>
       <Routes> 
         <Route path='/' element={<HomePage />}/>
         <Route path='/sendReceipt' element={<SendReceiptPage />}/>
