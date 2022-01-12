@@ -12,12 +12,6 @@ import { LoggerInUI } from '../utils/logger_functions';
 
 export const HomePage = () => {
     return <div>
-        <div style={{'display': 'flex', 'align-items':'center', 'justify-content': 'center'}}>
-            <span className='GROUP-J Padding-T-50'>GRUPO J</span>
-        </div>
-        <div style={{'display': 'flex', 'align-items':'center', 'justify-content': 'center'}}>
-            <span className='GROUP-J'>mba7aoj</span>
-        </div>
     <Box> 
         <nav>
             <ul style={{'display': 'flex'}}>
