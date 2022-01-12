@@ -4,7 +4,6 @@
     color: #FFF;
     cursor: pointer;
     display: block;
-    font: 14px 'Gotham HTF Bold';
     height: 50px;
     letter-spacing: 1px;
     outline: none;
@@ -26,6 +25,7 @@
     color: #FFF;
     cursor: pointer;
     height: 50px;
+    width: 100px;
     letter-spacing: 1px;
     outline: none;
     text-transform: uppercase;
@@ -33,6 +33,10 @@
     width: 100%;
     -webkit-appearance: none;
     text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .Button:hover {
@@ -43,10 +47,11 @@
 
 .List {
     list-style: none;
+    display: flex;
 }
 
 .Back-Button {
-    position: fixed;
+    position: absolute;
     left: 2%;
     top: 4%;
     transform: translate(-50%, -50%);
@@ -66,15 +71,21 @@
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
-    max-width: 1500px;
-    position: fixed;
+    /*position: fixed;*/
     top: 10%;
     left: 10%;
     right: 5%;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
 }
 
 .Card-Header-Local {
     background-color: #ed145b;
+    font-weight: bold;
+    color: #FFF;
+    text-align: right;
 }
 
 .Box-Processando {
@@ -83,4 +94,55 @@
     margin-left: 70px;
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+.Card-Div-1 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    max-width: 33.33%
+}
+
+.Card-Div-2 {
+    padding: 0;
+    background-color: #FFF;
+}
+
+.General-Box {
+    width: 100%;
+    height: inherit;
+}
+
+.Span-List-Card {
+    text-decoration: underline #bdbdbd 3px;
+    font-weight: bold;
+}
+
+.GROUP-J {
+    color: #FFF;
+    top: 10%;
+    left: 50%;
+    font-size: xx-large;
+    font-weight: bold;
+
+}
+
+.Valid-Cupom {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Padding-L-5 {
+    padding-left: 5px;
+}
+
+.Padding-L-10 {
+    padding-left: 10px;
+}
+
+.Padding-T-50 {
+    padding-top: 50px;
 }

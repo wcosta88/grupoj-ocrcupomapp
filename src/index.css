@@ -1,8 +1,8 @@
 body {
   background-size: cover;
-  background-color: #48102D; 
+  background-color: #48102D;
+  background-image: url("./background-image.jpeg");
   height: 100%;
-  overflow: hidden;
   width: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
