@@ -1,3 +1,11 @@
+# OCR CUPOM APP
+
+Aplicação responsável por realizar o upload do cupom, fazer uma pré validação e enviar para o processamento
+
+## Localização na arquitetura
+
+![](Arquitetura.png)
+
 # Instruções para Iniciar o FrontEnd
 
 ### O Serviço do Backend precisa estar rodando antes de executar as instruções abaixo.
@@ -16,4 +24,3 @@
 
 5. Acessar a URL [http://localhost:3000](http://localhost:3000) no seu navegador.
 =======
-
