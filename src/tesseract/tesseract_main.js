@@ -23,7 +23,9 @@ const recognizeImage = async (file) => {
   console.log('Worker Initialized');
 
   const data = await ts_worker.recognize(file);
-
+  
+  console.log(data.data.text); // For Debugging
+  
   if(findCnpj(data.data.text)) {
     let encodedFile = await encodeImgToBase64(file);
 
@@ -38,7 +40,7 @@ const recognizeImage = async (file) => {
     await httpPost(`http://localhost:4566/restapis/${api_key}/test/_user_request_/processamento-ocr-cupom`, requestHeaders, requestBody);
   }
   else
-    console.log('CNPJ nao encontrado no cupom fiscal');
+    LoggerInUI('CNPJ não encontrado no cupom fiscal');
 
 }
 

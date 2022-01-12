@@ -1,3 +1,5 @@
+import { LoggerInUI } from '../utils/logger_functions';
+
 // @param data: string
 // @return boolean
 const findCnpj = (data) => {
@@ -6,8 +8,9 @@ const findCnpj = (data) => {
         return true;
     }
     else {
-        console.log('Nao encontramos um CNPJ valida no seu cupom, por favor certifique-se que existe o campo CNPJ no cupom,\
-        caso ele exista por favor enviar o cupom novamente com o CNPJ legivel.');
+        //console.log('Nao encontramos um CNPJ valida no seu cupom, por favor certifique-se que existe o campo CNPJ no cupom,\
+        //caso ele exista por favor enviar o cupom novamente com o CNPJ legivel.');
+        LoggerInUI('CNPJ não encontrado no cupom fiscal');
         return false;
     }
 }

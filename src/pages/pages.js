@@ -11,19 +11,27 @@ import ReceiptList from '../components/listValidReceipt/listReceipt'
 import { LoggerInUI } from '../utils/logger_functions';
 
 export const HomePage = () => {
-    return <Box>  
+    return <div>
+        <div style={{'display': 'flex', 'align-items':'center', 'justify-content': 'center'}}>
+            <span className='GROUP-J Padding-T-50'>GRUPO J</span>
+        </div>
+        <div style={{'display': 'flex', 'align-items':'center', 'justify-content': 'center'}}>
+            <span className='GROUP-J'>mba7aoj</span>
+        </div>
+    <Box> 
         <nav>
-            <ul>
-                <li className='List'><Link to='sendReceipt' className='Button'>Enviar Cupom</Link></li>
-                <li className='List'><Link to='listValidReceipt' className='Button'>Listar Cupons Validos</Link></li>
+            <ul style={{'display': 'flex'}}>
+                <li className='List'><Link style={{'borderRight': '1px solid #FFF'}} to='sendReceipt' className='Button'>Enviar Cupom</Link></li>
+                <li className='List'><Link style={{'borderRight': '1px solid #FFF'}} to='listValidReceipt' className='Button'>Listar Cupons Validos</Link></li>
                 <li className='List'><Link to='listInvalidReceipt' className='Button'>Listar Cupons Invalidos</Link></li>
             </ul>
         </nav>
   </Box>
+  </div>
 }
 
 export const SendReceiptPage = () => {
-    return <div>
+    return <div className='General-Box'>
             <Box >
                 <Form></Form>
                 <div id='processing' className='Box-Processando'><p id='processing-text'></p></div>
@@ -45,14 +53,14 @@ export const ListValidReceipt = () => {
     }, []);
     
     if(receipts === 'Buscando Cumpons') 
-        return <div >
-                <Box  >
-                    <p>{receipts}</p>
-                </Box>
+        return <div className='General-Box'>
                 <Link to='/' className='Back-Button'><FaArrowAltCircleLeft size={50} /></Link>
+                <Box  >
+                    <p className='Box-Processando'>{receipts}</p>
+                </Box>
         </div>
     else 
-        return <div >
+        return <div className='General-Box'>
                 <div className='Box-Cards'>
                         {receipts.map((data) => {
                             return <ReceiptList data={data}/>
@@ -74,10 +82,10 @@ export const ListInvalidReceipt = () => {
     
     if(receipts === 'Buscando Cumpons') 
         return <div >
-                <Box  >
-                    <p>{receipts}</p>
-                </Box>
                 <Link to='/' className='Back-Button'><FaArrowAltCircleLeft size={50} /></Link>
+                <Box  >
+                    <p className='Box-Processando'>{receipts}</p>
+                </Box>
         </div>
     else 
         return <div >
